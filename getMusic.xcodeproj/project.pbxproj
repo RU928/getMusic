@@ -14,6 +14,10 @@
 		2AF193E51EC1990500A302EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF193E31EC1990500A302EA /* LaunchScreen.storyboard */; };
 		2AF193F01EC1990500A302EA /* getMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF193EF1EC1990500A302EA /* getMusicTests.swift */; };
 		2AF193FB1EC1990500A302EA /* getMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF193FA1EC1990500A302EA /* getMusicUITests.swift */; };
+		2AF1940A1EC1992200A302EA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF194091EC1992200A302EA /* AVFoundation.framework */; };
+		2AF1940C1EC1993800A302EA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF1940B1EC1993800A302EA /* MediaPlayer.framework */; };
+		2AF1940F1EC1E4D100A302EA /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1940D1EC1E4D100A302EA /* MusicTableViewCell.swift */; };
+		2AF194101EC1E4D100A302EA /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF1940E1EC1E4D100A302EA /* MusicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		2AF193F61EC1990500A302EA /* getMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = getMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF193FA1EC1990500A302EA /* getMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getMusicUITests.swift; sourceTree = "<group>"; };
 		2AF193FC1EC1990500A302EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AF194091EC1992200A302EA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2AF1940B1EC1993800A302EA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2AF1940D1EC1E4D100A302EA /* MusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		2AF1940E1EC1E4D100A302EA /* MusicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MusicTableViewCell.xib; path = getMusic/MusicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF1940C1EC1993800A302EA /* MediaPlayer.framework in Frameworks */,
+				2AF1940A1EC1992200A302EA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,8 @@
 				2AF193EE1EC1990500A302EA /* getMusicTests */,
 				2AF193F91EC1990500A302EA /* getMusicUITests */,
 				2AF193D81EC1990500A302EA /* Products */,
+				2AF1940E1EC1E4D100A302EA /* MusicTableViewCell.xib */,
+				2AF194081EC1992200A302EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +112,7 @@
 				2AF193DA1EC1990500A302EA /* AppDelegate.swift */,
 				2AF193DC1EC1990500A302EA /* ViewController.swift */,
 				2AF193DE1EC1990500A302EA /* Main.storyboard */,
+				2AF1940D1EC1E4D100A302EA /* MusicTableViewCell.swift */,
 				2AF193E11EC1990500A302EA /* Assets.xcassets */,
 				2AF193E31EC1990500A302EA /* LaunchScreen.storyboard */,
 				2AF193E61EC1990500A302EA /* Info.plist */,
@@ -123,6 +136,15 @@
 				2AF193FC1EC1990500A302EA /* Info.plist */,
 			);
 			path = getMusicUITests;
+			sourceTree = "<group>";
+		};
+		2AF194081EC1992200A302EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AF1940B1EC1993800A302EA /* MediaPlayer.framework */,
+				2AF194091EC1992200A302EA /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +260,7 @@
 				2AF193E51EC1990500A302EA /* LaunchScreen.storyboard in Resources */,
 				2AF193E21EC1990500A302EA /* Assets.xcassets in Resources */,
 				2AF193E01EC1990500A302EA /* Main.storyboard in Resources */,
+				2AF194101EC1E4D100A302EA /* MusicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +287,7 @@
 			files = (
 				2AF193DD1EC1990500A302EA /* ViewController.swift in Sources */,
 				2AF193DB1EC1990500A302EA /* AppDelegate.swift in Sources */,
+				2AF1940F1EC1E4D100A302EA /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +538,7 @@
 				2AF194011EC1990500A302EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AF194021EC1990500A302EA /* Build configuration list for PBXNativeTarget "getMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +547,7 @@
 				2AF194041EC1990500A302EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AF194051EC1990500A302EA /* Build configuration list for PBXNativeTarget "getMusicUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +556,7 @@
 				2AF194071EC1990500A302EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
