@@ -9,6 +9,20 @@
 import UIKit
 
 class MusicTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var MusicImageView: UIImageView!
+    
+    @IBOutlet weak var musicAlbumLabel: UILabel!
+    
+    @IBOutlet weak var musicMusicLabel: UILabel!
+    
+    @IBOutlet weak var musicArtistLabel: UILabel!
+    
+    @IBOutlet weak var handlePlayButton: UIButton!
+    @IBOutlet weak var handleStopButton: UIButton!
+    
+    var music: AnyObject!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
