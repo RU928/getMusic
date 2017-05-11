@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2AB9B2F81EC3005B00FC5AEE /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB9B2F71EC3005B00FC5AEE /* PlayViewController.swift */; };
+		2ABC68A91EC46EAE00288C3F /* musicHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC68A81EC46EAE00288C3F /* musicHomeViewController.swift */; };
 		2AF193DB1EC1990500A302EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF193DA1EC1990500A302EA /* AppDelegate.swift */; };
 		2AF193DD1EC1990500A302EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF193DC1EC1990500A302EA /* ViewController.swift */; };
 		2AF193E01EC1990500A302EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF193DE1EC1990500A302EA /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		2AB9B2F71EC3005B00FC5AEE /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		2ABC68A81EC46EAE00288C3F /* musicHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = musicHomeViewController.swift; sourceTree = "<group>"; };
 		2AF193D71EC1990500A302EA /* getMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF193DA1EC1990500A302EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AF193DC1EC1990500A302EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				2AF193DA1EC1990500A302EA /* AppDelegate.swift */,
 				2AF193DC1EC1990500A302EA /* ViewController.swift */,
 				2AF193DE1EC1990500A302EA /* Main.storyboard */,
+				2ABC68A81EC46EAE00288C3F /* musicHomeViewController.swift */,
 				2AB9B2F71EC3005B00FC5AEE /* PlayViewController.swift */,
 				2AF1940D1EC1E4D100A302EA /* MusicTableViewCell.swift */,
 				2AF193E11EC1990500A302EA /* Assets.xcassets */,
@@ -290,6 +293,7 @@
 			files = (
 				2AB9B2F81EC3005B00FC5AEE /* PlayViewController.swift in Sources */,
 				2AF193DD1EC1990500A302EA /* ViewController.swift in Sources */,
+				2ABC68A91EC46EAE00288C3F /* musicHomeViewController.swift in Sources */,
 				2AF193DB1EC1990500A302EA /* AppDelegate.swift in Sources */,
 				2AF1940F1EC1E4D100A302EA /* MusicTableViewCell.swift in Sources */,
 			);

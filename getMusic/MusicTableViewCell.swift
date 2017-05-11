@@ -19,7 +19,6 @@ class MusicTableViewCell: UITableViewCell {
     @IBOutlet weak var musicArtistLabel: UILabel!
     
     @IBOutlet weak var handlePlayButton: UIButton!
-    @IBOutlet weak var handleStopButton: UIButton!
     
     var music: AnyObject!
     
@@ -27,7 +26,19 @@ class MusicTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-    }
+        
+        if musicAlbumLabel.text == nil {
+            musicAlbumLabel.text = "不明なアルバム"
+        }
+        
+        if musicArtistLabel.text == nil {
+           musicArtistLabel.text = "不明なアーティスト"
+        }
+        
+        if musicMusicLabel.text == nil {
+            musicMusicLabel.text = "不明な曲"
+        }
+        }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

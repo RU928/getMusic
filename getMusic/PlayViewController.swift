@@ -76,7 +76,7 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         cell.handlePlayButton.addTarget(self, action:#selector(handlePlayButton(sender:event:)), for:  UIControlEvents.touchUpInside)
         
-        cell.handleStopButton.addTarget(self, action:#selector(handleStopButton(sender:event:)), for:  UIControlEvents.touchUpInside)
+      
         
         return cell
     }

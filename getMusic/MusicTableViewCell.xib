@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,78 +12,78 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="KGk-i7-Jjw" customClass="MusicTableViewCell" customModule="getMusic" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="441" height="155"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MusicTableViewCell" customModule="getMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="105"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="441" height="154.5"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <rect key="frame" x="0.0" y="0.0" width="345" height="104.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9F2-lS-QbV">
-                        <rect key="frame" x="8" y="8" width="100" height="100"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="曲名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyU-xS-qcu">
+                        <rect key="frame" x="87" y="46" width="250" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="アーティスト名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqy-L1-aih">
+                        <rect key="frame" x="87" y="78" width="250" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9F2-lS-QbV">
+                        <rect key="frame" x="8" y="8" width="71" height="71"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="100" id="BYs-cB-l6T"/>
-                            <constraint firstAttribute="height" constant="100" id="VTC-qv-UFV"/>
+                            <constraint firstAttribute="width" constant="71" id="GcO-xb-Wy6"/>
+                            <constraint firstAttribute="height" constant="71" id="ydE-jZ-Pz8"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アルバム名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF1-pX-JDE">
-                        <rect key="frame" x="113" y="8" width="320" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="曲名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyU-xS-qcu">
-                        <rect key="frame" x="113" y="34" width="320" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アーティスト名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqy-L1-aih">
-                        <rect key="frame" x="113" y="60" width="320" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="アルバム名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF1-pX-JDE">
+                        <rect key="frame" x="87" y="8" width="250" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ag3-CD-07G">
-                        <rect key="frame" x="8" y="116" width="31" height="30"/>
+                        <rect key="frame" x="28" y="79" width="30" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="g4F-z3-wNO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <state key="normal" title="再生"/>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6AS-cA-uIu">
-                        <rect key="frame" x="77" y="116" width="31" height="30"/>
-                        <state key="normal" title="停止"/>
-                    </button>
                 </subviews>
+                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                 <constraints>
-                    <constraint firstItem="6AS-cA-uIu" firstAttribute="top" secondItem="9F2-lS-QbV" secondAttribute="bottom" constant="8" id="7VL-jD-al3"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="aqy-L1-aih" secondAttribute="trailing" id="7bw-tr-FRl"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="6AS-cA-uIu" secondAttribute="bottom" constant="0.5" id="8QH-oD-3Tg"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="CF1-pX-JDE" secondAttribute="trailing" id="BN9-2o-qOo"/>
-                    <constraint firstItem="CF1-pX-JDE" firstAttribute="top" secondItem="9F2-lS-QbV" secondAttribute="top" id="Fs1-T0-7fq"/>
-                    <constraint firstItem="aqy-L1-aih" firstAttribute="leading" secondItem="CF1-pX-JDE" secondAttribute="leading" id="ICP-Ak-38X"/>
-                    <constraint firstItem="9F2-lS-QbV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="LqW-F4-84p"/>
-                    <constraint firstItem="9F2-lS-QbV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="OFg-Qa-Gh7"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="ag3-CD-07G" secondAttribute="bottom" constant="0.5" id="PLG-bs-vlW"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="FyU-xS-qcu" secondAttribute="trailing" id="Rk5-rm-yRD"/>
-                    <constraint firstItem="FyU-xS-qcu" firstAttribute="top" secondItem="CF1-pX-JDE" secondAttribute="bottom" constant="5" id="XEw-bS-C2y"/>
-                    <constraint firstItem="CF1-pX-JDE" firstAttribute="leading" secondItem="9F2-lS-QbV" secondAttribute="trailing" constant="5" id="XFo-He-IEW"/>
-                    <constraint firstItem="FyU-xS-qcu" firstAttribute="leading" secondItem="CF1-pX-JDE" secondAttribute="leading" id="YfJ-op-VMQ"/>
-                    <constraint firstItem="ag3-CD-07G" firstAttribute="leading" secondItem="9F2-lS-QbV" secondAttribute="leading" id="czh-yQ-jqw"/>
-                    <constraint firstItem="aqy-L1-aih" firstAttribute="top" secondItem="FyU-xS-qcu" secondAttribute="bottom" constant="5" id="hgS-mH-IoM"/>
-                    <constraint firstItem="6AS-cA-uIu" firstAttribute="leading" secondItem="ag3-CD-07G" secondAttribute="trailing" constant="38" id="jhv-C4-Vwm"/>
-                    <constraint firstItem="6AS-cA-uIu" firstAttribute="trailing" secondItem="9F2-lS-QbV" secondAttribute="trailing" id="rvv-qi-OVl"/>
-                    <constraint firstItem="ag3-CD-07G" firstAttribute="top" secondItem="9F2-lS-QbV" secondAttribute="bottom" constant="8" id="shQ-Wa-zkh"/>
+                    <constraint firstItem="CF1-pX-JDE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="2gF-d3-6kF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FyU-xS-qcu" secondAttribute="trailing" id="6EB-b9-Rsn"/>
+                    <constraint firstItem="9F2-lS-QbV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7Vp-ap-Bba"/>
+                    <constraint firstItem="aqy-L1-aih" firstAttribute="leading" secondItem="CF1-pX-JDE" secondAttribute="leading" id="8rQ-Ki-ZIB"/>
+                    <constraint firstItem="9F2-lS-QbV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="AB9-eX-82F"/>
+                    <constraint firstItem="FyU-xS-qcu" firstAttribute="top" secondItem="CF1-pX-JDE" secondAttribute="bottom" constant="26" id="AU1-Mj-tJg"/>
+                    <constraint firstItem="9F2-lS-QbV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Aky-ty-h3D"/>
+                    <constraint firstItem="FyU-xS-qcu" firstAttribute="leading" secondItem="CF1-pX-JDE" secondAttribute="leading" id="Mg9-tu-la1"/>
+                    <constraint firstItem="CF1-pX-JDE" firstAttribute="leading" secondItem="9F2-lS-QbV" secondAttribute="trailing" constant="5" id="Nix-8I-9bB"/>
+                    <constraint firstItem="aqy-L1-aih" firstAttribute="top" secondItem="FyU-xS-qcu" secondAttribute="bottom" constant="20" id="Rza-Os-18q"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CF1-pX-JDE" secondAttribute="trailing" id="Wa1-pd-c2C"/>
+                    <constraint firstItem="ag3-CD-07G" firstAttribute="centerX" secondItem="9F2-lS-QbV" secondAttribute="centerX" id="aMl-wz-zUy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ag3-CD-07G" secondAttribute="bottom" constant="0.5" id="lgP-Lu-awc"/>
+                    <constraint firstItem="CF1-pX-JDE" firstAttribute="leading" secondItem="9F2-lS-QbV" secondAttribute="trailing" constant="8" id="mRc-cr-bdj"/>
+                    <constraint firstItem="ag3-CD-07G" firstAttribute="top" secondItem="9F2-lS-QbV" secondAttribute="bottom" id="poO-HI-Y0p"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aqy-L1-aih" secondAttribute="trailing" id="qId-zU-QdY"/>
+                    <constraint firstItem="9F2-lS-QbV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ruE-Gh-bd0"/>
+                    <constraint firstItem="ag3-CD-07G" firstAttribute="top" secondItem="9F2-lS-QbV" secondAttribute="bottom" id="wnO-U6-roZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aqy-L1-aih" secondAttribute="bottom" constant="6.5" id="y4a-cX-nEm"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="MusicImageView" destination="9F2-lS-QbV" id="M0g-Np-akZ"/>
                 <outlet property="handlePlayButton" destination="ag3-CD-07G" id="lJr-jS-6vZ"/>
-                <outlet property="handleStopButton" destination="6AS-cA-uIu" id="BM4-Ch-Jry"/>
-                <outlet property="imageView" destination="9F2-lS-QbV" id="twZ-Jb-tGk"/>
                 <outlet property="musicAlbumLabel" destination="CF1-pX-JDE" id="EVT-RJ-xNK"/>
                 <outlet property="musicArtistLabel" destination="aqy-L1-aih" id="TPx-mv-VXb"/>
                 <outlet property="musicMusicLabel" destination="FyU-xS-qcu" id="Euh-7r-g2S"/>
             </connections>
-            <point key="canvasLocation" x="63.5" y="-131.5"/>
+            <point key="canvasLocation" x="-122.5" y="-249.5"/>
         </tableViewCell>
     </objects>
 </document>
