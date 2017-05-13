@@ -21,6 +21,8 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var counts: [Int] = []
     
+    var TopTenCount: [Int] = []
+
     var rankCollection: [MPMediaItemCollection] = []
 
     override func viewDidLoad() {
@@ -56,8 +58,13 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
             print("countsの数は\(counts.count)です")
         }///ここまでセル値の準備
         
+
         counts.sort{$0 > $1}
-        let TopTenCount = [counts[0], counts[1], counts[2], counts[3], counts[4], counts[5], counts[6], counts[7], counts[8], counts[9]]
+        for i in 0...9 {
+            if counts[i] >= 0{
+                TopTenCount.append(counts[i])
+            }
+        }
         
         songsQuery = MPMediaQuery.songs()
         
@@ -86,7 +93,7 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return TopTenCount.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
