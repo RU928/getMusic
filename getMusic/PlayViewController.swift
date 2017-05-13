@@ -18,7 +18,9 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     let albumsQuery = MPMediaQuery.songs()
     
-    let predicate = MPMediaPropertyPredicate(value: 3, forProperty: MPMediaItemPropertyPlayCount, comparisonType: MPMediaPredicateComparison.equalTo)
+    var predicateValue = 0
+    
+    
     
 
     
@@ -36,6 +38,8 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         
         player = MPMusicPlayerController.applicationMusicPlayer()
+        
+        let predicate = MPMediaPropertyPredicate(value: predicateValue, forProperty: MPMediaItemPropertyPlayCount, comparisonType: MPMediaPredicateComparison.equalTo)
         
         albumsQuery.addFilterPredicate(predicate)
         

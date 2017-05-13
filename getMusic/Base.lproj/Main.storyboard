@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GhT-cw-UzP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,32 +10,22 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="VHd-dq-lM2">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GhT-cw-UzP" customClass="ViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="muC-1i-ERT"/>
+                        <viewControllerLayoutGuide type="bottom" id="h78-Pa-OPk"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="DKa-wF-mgD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="To9-KW-hco">
-                                <rect key="frame" x="164" y="382" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="移動"/>
-                                <connections>
-                                    <segue destination="1Ed-gg-1rK" kind="show" id="ZHP-B7-5fb"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFz-5H-cib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-142" y="125"/>
+            <point key="canvasLocation" x="-29" y="184"/>
         </scene>
         <!--Play View Controller-->
         <scene sceneID="FLC-Pc-AZP">
@@ -57,9 +47,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="jvm-Py-gpO" secondAttribute="trailing" id="5N4-Pg-Hko"/>
+                            <constraint firstItem="jvm-Py-gpO" firstAttribute="top" secondItem="VU5-GF-KSS" secondAttribute="top" id="Q4o-EA-7OL"/>
                             <constraint firstItem="jvm-Py-gpO" firstAttribute="leading" secondItem="VU5-GF-KSS" secondAttribute="leading" id="ZsA-Qt-Ddv"/>
                             <constraint firstItem="3Su-vQ-UWv" firstAttribute="top" secondItem="jvm-Py-gpO" secondAttribute="bottom" id="bYC-3P-van"/>
+                            <constraint firstItem="3Su-vQ-UWv" firstAttribute="top" secondItem="jvm-Py-gpO" secondAttribute="bottom" id="g1T-8g-FvU"/>
                             <constraint firstItem="jvm-Py-gpO" firstAttribute="top" secondItem="VU5-GF-KSS" secondAttribute="top" id="xGd-9K-XsR"/>
+                            <constraint firstAttribute="trailing" secondItem="jvm-Py-gpO" secondAttribute="trailing" id="yum-n0-ijq"/>
+                            <constraint firstItem="jvm-Py-gpO" firstAttribute="leading" secondItem="VU5-GF-KSS" secondAttribute="leading" id="znJ-z6-pDY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -73,7 +67,7 @@
         <!--Music Home View Controller-->
         <scene sceneID="faU-c1-V5P">
             <objects>
-                <viewController storyboardIdentifier="musicHome" id="1Ed-gg-1rK" customClass="musicHomeViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="musicHome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Ed-gg-1rK" customClass="musicHomeViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M2U-zO-r84"/>
                         <viewControllerLayoutGuide type="bottom" id="d2L-Ue-08Y"/>
@@ -82,9 +76,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ccO-tN-a2J">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ccO-tN-a2J">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="amo-UC-zgB" detailTextLabel="z8T-ZD-pDZ" style="IBUITableViewCellStyleSubtitle" id="blt-Zu-8ny">
@@ -115,12 +108,71 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ccO-tN-a2J" firstAttribute="top" secondItem="9ZD-5g-VKY" secondAttribute="top" id="J4T-Re-RWH"/>
+                            <constraint firstItem="d2L-Ue-08Y" firstAttribute="top" secondItem="ccO-tN-a2J" secondAttribute="bottom" id="VAe-yk-gwE"/>
+                            <constraint firstItem="ccO-tN-a2J" firstAttribute="leading" secondItem="9ZD-5g-VKY" secondAttribute="leading" id="wK1-TT-fgP"/>
+                            <constraint firstAttribute="trailing" secondItem="ccO-tN-a2J" secondAttribute="trailing" id="z7q-oN-2wV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zzN-VE-Ztz"/>
                     <connections>
                         <outlet property="tableView" destination="ccO-tN-a2J" id="N0j-eZ-fEW"/>
+                        <segue destination="620-ll-OvP" kind="show" identifier="segue" id="m6F-qa-rMR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Idp-LU-TdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1343.2" y="833.43328335832086"/>
+        </scene>
+        <!--Ranking View Controller-->
+        <scene sceneID="tHX-QW-Eui">
+            <objects>
+                <viewController storyboardIdentifier="rank" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QKA-0Z-Pfl" customClass="RankingViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HQx-lT-EI8"/>
+                        <viewControllerLayoutGuide type="bottom" id="pGW-Fc-c5o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ap1-0G-jqD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96.5" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vkb-jf-NOA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vkb-jf-NOA" secondAttribute="trailing" id="O01-UH-Q6t"/>
+                            <constraint firstItem="pGW-Fc-c5o" firstAttribute="top" secondItem="Vkb-jf-NOA" secondAttribute="bottom" id="jXy-Xa-idg"/>
+                            <constraint firstItem="Vkb-jf-NOA" firstAttribute="leading" secondItem="ap1-0G-jqD" secondAttribute="leading" id="nXF-X6-pSQ"/>
+                            <constraint firstItem="Vkb-jf-NOA" firstAttribute="top" secondItem="ap1-0G-jqD" secondAttribute="top" id="yww-ur-d8G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Vkb-jf-NOA" id="KRl-3h-Gwi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ax4-Qt-Ur4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680.79999999999995" y="1557.5712143928038"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tQG-jU-0wb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dnP-pv-XIk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bLf-2v-Jdz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Ed-gg-1rK" kind="relationship" relationship="rootViewController" id="oVR-6b-T40"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wnh-eI-yGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="404" y="833.43328335832086"/>
         </scene>
