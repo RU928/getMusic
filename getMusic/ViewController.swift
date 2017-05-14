@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         tabBarController.view.frame = view.bounds
         tabBarController.didMove(toParentViewController: self)
         
-        let  musicHomeController = storyboard?.instantiateViewController(withIdentifier: "musicHome")
+        let  musicHomeController = storyboard?.instantiateViewController(withIdentifier: "navigate")
         let  rankController = storyboard?.instantiateViewController(withIdentifier: "rank")
         
         tabBarController.setView(rankController, at: 0)

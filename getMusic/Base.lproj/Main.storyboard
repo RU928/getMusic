@@ -22,15 +22,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tfz-oR-yoh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFz-5H-cib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="184"/>
+            <point key="canvasLocation" x="909.60000000000002" y="183.95802098950526"/>
         </scene>
         <!--Play View Controller-->
         <scene sceneID="FLC-Pc-AZP">
             <objects>
-                <viewController storyboardIdentifier="play" id="620-ll-OvP" customClass="PlayViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="play" automaticallyAdjustsScrollViewInsets="NO" id="620-ll-OvP" customClass="PlayViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oms-wV-ne9"/>
                         <viewControllerLayoutGuide type="bottom" id="3Su-vQ-UWv"/>
@@ -62,12 +63,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPf-8t-JUY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866" y="125"/>
+            <point key="canvasLocation" x="1804" y="124.58770614692655"/>
         </scene>
         <!--Music Home View Controller-->
         <scene sceneID="faU-c1-V5P">
             <objects>
-                <viewController storyboardIdentifier="musicHome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Ed-gg-1rK" customClass="musicHomeViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="musicHome" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Ed-gg-1rK" customClass="musicHomeViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M2U-zO-r84"/>
                         <viewControllerLayoutGuide type="bottom" id="d2L-Ue-08Y"/>
@@ -77,7 +78,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ccO-tN-a2J">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="amo-UC-zgB" detailTextLabel="z8T-ZD-pDZ" style="IBUITableViewCellStyleSubtitle" id="blt-Zu-8ny">
@@ -109,8 +110,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ccO-tN-a2J" firstAttribute="top" secondItem="9ZD-5g-VKY" secondAttribute="top" id="J4T-Re-RWH"/>
                             <constraint firstItem="d2L-Ue-08Y" firstAttribute="top" secondItem="ccO-tN-a2J" secondAttribute="bottom" id="VAe-yk-gwE"/>
+                            <constraint firstItem="ccO-tN-a2J" firstAttribute="top" secondItem="M2U-zO-r84" secondAttribute="bottom" id="kFd-5i-y0S"/>
                             <constraint firstItem="ccO-tN-a2J" firstAttribute="leading" secondItem="9ZD-5g-VKY" secondAttribute="leading" id="wK1-TT-fgP"/>
                             <constraint firstAttribute="trailing" secondItem="ccO-tN-a2J" secondAttribute="trailing" id="z7q-oN-2wV"/>
                         </constraints>
@@ -123,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Idp-LU-TdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1343.2" y="833.43328335832086"/>
+            <point key="canvasLocation" x="2282.4000000000001" y="833.43328335832086"/>
         </scene>
         <!--Ranking View Controller-->
         <scene sceneID="tHX-QW-Eui">
@@ -138,43 +139,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96.5" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vkb-jf-NOA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Vkb-jf-NOA" secondAttribute="trailing" id="O01-UH-Q6t"/>
+                            <constraint firstItem="Vkb-jf-NOA" firstAttribute="top" secondItem="HQx-lT-EI8" secondAttribute="bottom" id="dCE-0S-aem"/>
                             <constraint firstItem="pGW-Fc-c5o" firstAttribute="top" secondItem="Vkb-jf-NOA" secondAttribute="bottom" id="jXy-Xa-idg"/>
                             <constraint firstItem="Vkb-jf-NOA" firstAttribute="leading" secondItem="ap1-0G-jqD" secondAttribute="leading" id="nXF-X6-pSQ"/>
-                            <constraint firstItem="Vkb-jf-NOA" firstAttribute="top" secondItem="ap1-0G-jqD" secondAttribute="top" id="yww-ur-d8G"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1qR-Ev-aZW"/>
                     <connections>
                         <outlet property="tableView" destination="Vkb-jf-NOA" id="KRl-3h-Gwi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ax4-Qt-Ur4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680.79999999999995" y="1557.5712143928038"/>
+            <point key="canvasLocation" x="1620" y="1557.5712143928038"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="tQG-jU-0wb">
+        <scene sceneID="Wkb-OV-GZS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dnP-pv-XIk" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigate" automaticallyAdjustsScrollViewInsets="NO" id="Ree-9T-uxc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bLf-2v-Jdz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PA3-CZ-JZg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="1Ed-gg-1rK" kind="relationship" relationship="rootViewController" id="oVR-6b-T40"/>
+                        <segue destination="1Ed-gg-1rK" kind="relationship" relationship="rootViewController" id="Vg3-j2-TCf"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wnh-eI-yGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNs-fh-zJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404" y="833.43328335832086"/>
+            <point key="canvasLocation" x="1343.2" y="833.43328335832086"/>
         </scene>
     </scenes>
 </document>

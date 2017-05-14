@@ -21,7 +21,7 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var counts: [Int] = []
     
-    var TopTenCount: [Int] = []
+    var TopTwentyCount: [Int] = []
 
     var rankCollection: [MPMediaItemCollection] = []
 
@@ -48,9 +48,9 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
             
             songsQuery.addFilterPredicate(predicate)
             
-            print("songsQuery.collections?.countの数は\(songsQuery.collections?.count)です")
+            print("再生回数が\(i)回の曲数は\((songsQuery.collections?.count)!)個です")
             
-            if (songsQuery.collections?.count) != 0 {
+            if (songsQuery.collections?.count) != 0 {///再生回数のパターンを取得(1回、４回、３４回など)
                 counts.append(i)
             }
             
@@ -59,16 +59,16 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         }///ここまでセル値の準備
         
 
-        counts.sort{$0 > $1}
-        for i in 0...9 {
-            if counts[i] >= 0{
-                TopTenCount.append(counts[i])
+        counts.sort{$0 > $1}///counts内の再生回数を昇順にする。
+        for i in 0...19 {
+            if counts[i] >= 0{///再生回数が19種類以下の場合があるため。iphone購入当初は０回〜数回が最高再生回数。
+                TopTwentyCount.append(counts[i])
             }
         }
         
         songsQuery = MPMediaQuery.songs()
         
-        for i in TopTenCount{
+        for i in TopTwentyCount{
             for song in songsQuery.collections!{
                 if song.representativeItem?.playCount == i{
                     rankCollection.append(song)
@@ -82,7 +82,9 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         let nib = UINib(nibName: "rankTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "Cell")
+        tableView.estimatedRowHeight = 120
         tableView.rowHeight = UITableViewAutomaticDimension
+        
     }
     
 
@@ -93,15 +95,15 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return TopTenCount.count
+        return TopTwentyCount.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath) as! rankTableViewCell
         
-        let image = rankCollection[indexPath.row].representativeItem?.artwork?.image(at: (cell.imageView?.bounds.size)!)
-        cell.rankNumberLabel.text = "\(rankCollection[indexPath.row].representativeItem?.playCount)"
-        cell.imageView?.image = image
+        let image = rankCollection[indexPath.row].representativeItem?.artwork?.image(at: (cell.imageVIew?.bounds.size)!)
+        cell.playCountLabel.text = "\((rankCollection[indexPath.row].representativeItem?.playCount)!)回"
+        cell.imageVIew?.image = image
         cell.rankNumberLabel.text = "\(indexPath.row + 1)"
         cell.artistLabel.text = rankCollection[indexPath.row].representativeItem?.artist
         cell.titleLabel.text = rankCollection[indexPath.row].representativeItem?.title
@@ -113,6 +115,7 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         // セルをタップされたら何もせずに選択状態を解除する
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
     }
+    
     
 
     /*
