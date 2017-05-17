@@ -20,6 +20,12 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var predicateValue = 0
     
+    var query: MPMediaItemCollection!
+    
+    var isPlayed = 0
+    
+    var playChecker: MPMediaItemCollection!
+    
     
     
 
@@ -77,6 +83,14 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.musicArtistLabel?.text = music?.representativeItem?.artist
         cell.music = music
         
+        if music == query {
+            let image = UIImage(named: "stop")
+            cell.handlePlayButton.setImage(image, for: UIControlState.normal)
+        }else{
+            let image = UIImage(named: "play")
+            cell.handlePlayButton.setImage(image, for: UIControlState.normal)
+        }
+        
 
         cell.handlePlayButton.addTarget(self, action:#selector(handlePlayButton(sender:event:)), for:  UIControlEvents.touchUpInside)
         
@@ -89,14 +103,26 @@ class PlayViewController: UIViewController, UITableViewDelegate, UITableViewData
         let touch = event.allTouches?.first
         let point = touch!.location(in: self.tableView)
         let indexPath = tableView.indexPathForRow(at: point)
-        
         // 配列からタップされたインデックスのデータを取り出す
-        let query = albumsQuery.collections?[indexPath!.row]
+        query = albumsQuery.collections?[indexPath!.row]
+        print("DEBUG_PRINT: queryに\(query)が代入されました")
         
-        // プレイヤーにqueryから作成したキューをセット
-        // (playerはMPMusicPlayerControllerのインスタンスを示す)
-        player.setQueue(with: query!)
-        player.play()
+        if query != playChecker {
+            
+            // プレイヤーにqueryから作成したキューをセット
+            // (playerはMPMusicPlayerControllerのインスタンスを示す)
+            player.setQueue(with: query!)
+            player.play()
+            
+            playChecker = query
+            tableView.reloadData()
+        }else{
+            player.stop()
+            playChecker = nil
+            query = nil
+            tableView.reloadData()
+               }
+        
 
     }
     

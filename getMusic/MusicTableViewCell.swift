@@ -12,6 +12,8 @@ class MusicTableViewCell: UITableViewCell {
     
     @IBOutlet weak var MusicImageView: UIImageView!
     
+    @IBOutlet weak var blackImageView: UIImageView!
+    
     @IBOutlet weak var musicAlbumLabel: UILabel!
     
     @IBOutlet weak var musicMusicLabel: UILabel!
@@ -22,10 +24,27 @@ class MusicTableViewCell: UITableViewCell {
     
     var music: AnyObject!
     
+    var playOrStop: Int = 0
+
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        self.MusicImageView.layer.cornerRadius = 40
+        self.handlePlayButton.layer.cornerRadius = 40
+        self.blackImageView.layer.cornerRadius = 40
+        
+        self.MusicImageView.layer.masksToBounds = true
+        self.handlePlayButton.layer.masksToBounds = true
+        self.blackImageView.layer.masksToBounds = true
+        
+        blackImageView.image = UIImage(named: "black")
+        
+        
+        
+
         
         if musicAlbumLabel.text == nil {
             musicAlbumLabel.text = "不明なアルバム"

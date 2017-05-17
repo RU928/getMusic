@@ -10,6 +10,7 @@ import UIKit
 
 class rankTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var blackImageView: UIImageView!
     @IBOutlet weak var rankNumberLabel: UILabel!
     @IBOutlet weak var imageVIew: UIImageView!
     @IBOutlet weak var playCountLabel: UILabel!
@@ -19,6 +20,17 @@ class rankTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        blackImageView.image = UIImage(named: "black")
+        imageVIew.layer.cornerRadius = 25
+        blackImageView.layer.cornerRadius = 25
+        self.imageVIew.layer.masksToBounds = true
+        self.blackImageView.layer.masksToBounds = true
+        if imageVIew.image == nil{
+            imageVIew.backgroundColor = UIColor.gray
+        }
+
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

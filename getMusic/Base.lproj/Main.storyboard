@@ -41,18 +41,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jvm-Py-gpO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="jvm-Py-gpO" secondAttribute="trailing" id="5N4-Pg-Hko"/>
-                            <constraint firstItem="jvm-Py-gpO" firstAttribute="top" secondItem="VU5-GF-KSS" secondAttribute="top" id="Q4o-EA-7OL"/>
                             <constraint firstItem="jvm-Py-gpO" firstAttribute="leading" secondItem="VU5-GF-KSS" secondAttribute="leading" id="ZsA-Qt-Ddv"/>
                             <constraint firstItem="3Su-vQ-UWv" firstAttribute="top" secondItem="jvm-Py-gpO" secondAttribute="bottom" id="bYC-3P-van"/>
                             <constraint firstItem="3Su-vQ-UWv" firstAttribute="top" secondItem="jvm-Py-gpO" secondAttribute="bottom" id="g1T-8g-FvU"/>
-                            <constraint firstItem="jvm-Py-gpO" firstAttribute="top" secondItem="VU5-GF-KSS" secondAttribute="top" id="xGd-9K-XsR"/>
+                            <constraint firstItem="jvm-Py-gpO" firstAttribute="top" secondItem="Oms-wV-ne9" secondAttribute="bottom" id="gw0-Ho-UEc"/>
                             <constraint firstAttribute="trailing" secondItem="jvm-Py-gpO" secondAttribute="trailing" id="yum-n0-ijq"/>
                             <constraint firstItem="jvm-Py-gpO" firstAttribute="leading" secondItem="VU5-GF-KSS" secondAttribute="leading" id="znJ-z6-pDY"/>
                         </constraints>
@@ -65,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="1804" y="124.58770614692655"/>
         </scene>
-        <!--Music Home View Controller-->
+        <!--再生回数-->
         <scene sceneID="faU-c1-V5P">
             <objects>
                 <viewController storyboardIdentifier="musicHome" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Ed-gg-1rK" customClass="musicHomeViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
@@ -116,7 +115,7 @@
                             <constraint firstAttribute="trailing" secondItem="ccO-tN-a2J" secondAttribute="trailing" id="z7q-oN-2wV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zzN-VE-Ztz"/>
+                    <navigationItem key="navigationItem" title="再生回数" id="zzN-VE-Ztz"/>
                     <connections>
                         <outlet property="tableView" destination="ccO-tN-a2J" id="N0j-eZ-fEW"/>
                         <segue destination="620-ll-OvP" kind="show" identifier="segue" id="m6F-qa-rMR"/>
@@ -159,6 +158,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ax4-Qt-Ur4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1620" y="1557.5712143928038"/>
+        </scene>
+        <!--Album Rank View Controller-->
+        <scene sceneID="f88-ov-Yt0">
+            <objects>
+                <viewController storyboardIdentifier="albumRank" id="brJ-bA-6IT" customClass="albumRankViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4HK-bV-0XY"/>
+                        <viewControllerLayoutGuide type="bottom" id="tn8-Ft-3od"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qv7-VZ-GdH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kzs-on-Z8R">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tn8-Ft-3od" firstAttribute="top" secondItem="kzs-on-Z8R" secondAttribute="bottom" id="8zK-DQ-csw"/>
+                            <constraint firstItem="kzs-on-Z8R" firstAttribute="top" secondItem="4HK-bV-0XY" secondAttribute="bottom" id="AX6-3C-yE3"/>
+                            <constraint firstAttribute="trailing" secondItem="kzs-on-Z8R" secondAttribute="trailing" id="Qw7-7z-8LC"/>
+                            <constraint firstItem="kzs-on-Z8R" firstAttribute="leading" secondItem="qv7-VZ-GdH" secondAttribute="leading" id="aFd-wM-AGw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="kzs-on-Z8R" id="6Tx-Ti-peO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Cc-4Q-QKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2629.5999999999999" y="1533.2833583208396"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wkb-OV-GZS">
