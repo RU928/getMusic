@@ -192,6 +192,39 @@
             </objects>
             <point key="canvasLocation" x="2629.5999999999999" y="1533.2833583208396"/>
         </scene>
+        <!--Artist Rank View Controller-->
+        <scene sceneID="nZK-l0-bDN">
+            <objects>
+                <viewController storyboardIdentifier="artist" id="AQA-8X-0ov" customClass="artistRankViewController" customModule="getMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EEA-cP-AfC"/>
+                        <viewControllerLayoutGuide type="bottom" id="pBh-2R-8P4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oMt-Wa-BPl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sdi-um-uue">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pBh-2R-8P4" firstAttribute="top" secondItem="Sdi-um-uue" secondAttribute="bottom" id="DhS-m0-UhR"/>
+                            <constraint firstItem="Sdi-um-uue" firstAttribute="top" secondItem="EEA-cP-AfC" secondAttribute="bottom" constant="8" id="d8K-au-Y5F"/>
+                            <constraint firstAttribute="trailing" secondItem="Sdi-um-uue" secondAttribute="trailing" id="pVa-zD-8dV"/>
+                            <constraint firstItem="Sdi-um-uue" firstAttribute="leading" secondItem="oMt-Wa-BPl" secondAttribute="leading" id="wpX-Hm-xIq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Sdi-um-uue" id="uaq-FE-h0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWv-0X-t2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3506.4000000000001" y="1544.9775112443779"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wkb-OV-GZS">
             <objects>

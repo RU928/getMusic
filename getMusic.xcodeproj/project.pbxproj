@@ -26,6 +26,9 @@
 		2AF1940C1EC1993800A302EA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF1940B1EC1993800A302EA /* MediaPlayer.framework */; };
 		2AF1940F1EC1E4D100A302EA /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1940D1EC1E4D100A302EA /* MusicTableViewCell.swift */; };
 		2AF194101EC1E4D100A302EA /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF1940E1EC1E4D100A302EA /* MusicTableViewCell.xib */; };
+		2AF1EBDC1ECD4706003E803A /* artistRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1EBDB1ECD4706003E803A /* artistRankViewController.swift */; };
+		2AF1EBDF1ECD57C9003E803A /* artistRankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1EBDD1ECD57C9003E803A /* artistRankTableViewCell.swift */; };
+		2AF1EBE01ECD57C9003E803A /* artistRankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF1EBDE1ECD57C9003E803A /* artistRankTableViewCell.xib */; };
 		7EC2092902DBBED8BF396BA2 /* Pods_getMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E963967888435D317E9959 /* Pods_getMusic.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,9 @@
 		2AF1940B1EC1993800A302EA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		2AF1940D1EC1E4D100A302EA /* MusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		2AF1940E1EC1E4D100A302EA /* MusicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MusicTableViewCell.xib; path = getMusic/MusicTableViewCell.xib; sourceTree = "<group>"; };
+		2AF1EBDB1ECD4706003E803A /* artistRankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = artistRankViewController.swift; sourceTree = "<group>"; };
+		2AF1EBDD1ECD57C9003E803A /* artistRankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = artistRankTableViewCell.swift; sourceTree = "<group>"; };
+		2AF1EBDE1ECD57C9003E803A /* artistRankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = artistRankTableViewCell.xib; sourceTree = "<group>"; };
 		B56C67DF54DC0F2E722303D9 /* Pods-getMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-getMusic/Pods-getMusic.release.xcconfig"; sourceTree = "<group>"; };
 		CC86547641CC797DBCF49A97 /* Pods-getMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-getMusic/Pods-getMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		D3E963967888435D317E9959 /* Pods_getMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_getMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +139,9 @@
 			children = (
 				2AF193DA1EC1990500A302EA /* AppDelegate.swift */,
 				2AF193DE1EC1990500A302EA /* Main.storyboard */,
+				2AF1EBDD1ECD57C9003E803A /* artistRankTableViewCell.swift */,
+				2AF1EBDE1ECD57C9003E803A /* artistRankTableViewCell.xib */,
+				2AF1EBDB1ECD4706003E803A /* artistRankViewController.swift */,
 				2A08C4A11ECBD87D0008954F /* albumRankTableViewCell.swift */,
 				2A08C4A21ECBD87D0008954F /* albumRankTableViewCell.xib */,
 				2A113D061ECB0EA200CA3F6D /* albumRankViewController.swift */,
@@ -300,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF1EBE01ECD57C9003E803A /* artistRankTableViewCell.xib in Resources */,
 				2AF193E51EC1990500A302EA /* LaunchScreen.storyboard in Resources */,
 				2AC41D6B1EC70C7A00D42DC9 /* rankTableViewCell.xib in Resources */,
 				2AF193E01EC1990500A302EA /* Main.storyboard in Resources */,
@@ -382,11 +392,13 @@
 				2AC41D6A1EC70C7A00D42DC9 /* rankTableViewCell.swift in Sources */,
 				2A7A720F1EC5A084008DCDFC /* RankingViewController.swift in Sources */,
 				2AB9B2F81EC3005B00FC5AEE /* PlayViewController.swift in Sources */,
+				2AF1EBDF1ECD57C9003E803A /* artistRankTableViewCell.swift in Sources */,
 				2A08C4A31ECBD87D0008954F /* albumRankTableViewCell.swift in Sources */,
 				2A113D071ECB0EA200CA3F6D /* albumRankViewController.swift in Sources */,
 				2ABC68A91EC46EAE00288C3F /* musicHomeViewController.swift in Sources */,
 				2AF193DB1EC1990500A302EA /* AppDelegate.swift in Sources */,
 				2AF1940F1EC1E4D100A302EA /* MusicTableViewCell.swift in Sources */,
+				2AF1EBDC1ECD4706003E803A /* artistRankViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
