@@ -59,9 +59,15 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         }///ここまでセル値の準備
         
 
-        counts.sort{$0 > $1}///counts内の再生回数を昇順にする。
-        for i in 0...19 {
-            if counts[i] >= 0{///再生回数が19種類以下の場合があるため。iphone購入当初は０回〜数回が最高再生回数。
+        counts.sort{$0 > $1}///counts内の再生回数を昇順にする。ここで処理落ち
+        var number = 0
+        if counts.count < 19{
+            number = counts.count
+        }else{
+            number = 19
+        }
+        for i in 0...number {
+            if counts[i] >= 0{///再生回数が19種類以下の場合があるため。
                 TopTwentyCount.append(counts[i])
             }
         }

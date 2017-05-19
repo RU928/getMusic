@@ -20,7 +20,7 @@ class artistRankViewController: UIViewController, UITableViewDelegate, UITableVi
     var artistRank: [String] = []
     var playCountRank: [Int] = []
     var DurationSumRank: [Int] = []
-    var artistImage: [MPMediaItemArtwork] = []
+    var artistImage: [MPMediaItemCollection] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class artistRankViewController: UIViewController, UITableViewDelegate, UITableVi
         var forSetDurationRank: [Int] = []
         var forSetPlayCountRank: [Int] = []
         var forSetArtistRank: [String] = []
-        var forSetArtistImage: [MPMediaItemArtwork?] = []
+        var forSetArtistImage: [MPMediaItemCollection] = []
         
         for artist in artistQuery.collections!{
             var artistDurationSum = 0
@@ -62,16 +62,18 @@ class artistRankViewController: UIViewController, UITableViewDelegate, UITableVi
             forSetDurationRank.append(artistDurationSum)
             forSetPlayCountRank.append(artistCountSum)
             forSetArtistRank.append((artist.representativeItem?.artist)!)
-            
-            if artist.representativeItem?.artwork != nil{
-            forSetArtistImage.append((artist.representativeItem?.artwork)!)
-            }else{
-                forSetArtistImage.append(nil)
-            }
+            forSetArtistImage.append(artist)
         }
         
         allArtistDurationList.sort{ $0 > $1 }
-        for i in 0...19{ ///上位２０の総再生時間を取得
+        
+        var number = 0
+        if allArtistDurationList.count < 19{
+            number = allArtistDurationList.count
+        }else{
+            number = 19
+        }
+        for i in 0...number{ ///上位２０の総再生時間を取得
             if allArtistDurationList[i] >= 0 {
                 DurationSumRank.append(allArtistDurationList[i])
                 print("\(allArtistDurationList[i])を追加しました。")
@@ -88,7 +90,7 @@ class artistRankViewController: UIViewController, UITableViewDelegate, UITableVi
                 if DurationSumRank[i] == forSetDurationRank[number]{
                     artistRank.append(forSetArtistRank[number])
                     playCountRank.append(forSetPlayCountRank[number])
-                    artistImage.append(forSetArtistImage[number]!)
+                    artistImage.append(forSetArtistImage[number])
                     print("追加しました")
                     break
                 }///if
@@ -123,13 +125,12 @@ class artistRankViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.artistNameLabel.text = "\(artistRank[indexPath.row])"
         cell.rankLabel.text = "\(indexPath.row + 1)"
         
-        if artistImage[indexPath.row] != nil{
-            let image = artistImage[indexPath.row].image(at: cell.artistImageView.bounds.size)
+        if artistImage[indexPath.row].representativeItem?.artwork != nil{
+        let image = artistImage[indexPath.row].representativeItem?.artwork?.image(at: cell.artistImageView.bounds.size)
             cell.artistImageView.image = image
         }else{
             cell.artistImageView.backgroundColor = UIColor.gray
         }
-        
         return cell
     }
     

@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
     
     func setupTab(){
-        let tabBarController: ESTabBarController! = ESTabBarController(tabIconNames: ["rank", "album", "artist", "genre"])
+        let tabBarController: ESTabBarController! = ESTabBarController(tabIconNames: ["rank", "album", "artist"])
         addChildViewController(tabBarController)
         view.addSubview(tabBarController.view)
         tabBarController.view.frame = view.bounds
@@ -35,7 +35,6 @@ class ViewController: UIViewController {
         tabBarController.buttonsBackgroundColor = UIColor.white
 
         
-        let  musicHomeController = storyboard?.instantiateViewController(withIdentifier: "navigate")
         let  rankController = storyboard?.instantiateViewController(withIdentifier: "rank")
         let  albumRank = storyboard?.instantiateViewController(withIdentifier: "albumRank")
         let artistRank = storyboard?.instantiateViewController(withIdentifier: "artist")
