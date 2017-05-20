@@ -68,16 +68,13 @@ class artistRankViewController: UIViewController, UITableViewDelegate, UITableVi
         allArtistDurationList.sort{ $0 > $1 }
         
         var number = 0
-        if allArtistDurationList.count < 19{
-            number = allArtistDurationList.count
+        if allArtistDurationList.count < 20{
+            number = allArtistDurationList.count - 1
         }else{
             number = 19
         }
         for i in 0...number{ ///上位２０の総再生時間を取得
-            if allArtistDurationList[i] >= 0 {
                 DurationSumRank.append(allArtistDurationList[i])
-                print("\(allArtistDurationList[i])を追加しました。")
-            }
         }
         
         ///もう一度同じ処理（だった）

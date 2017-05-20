@@ -60,17 +60,15 @@ class albumRankViewController: UIViewController, UITableViewDelegate, UITableVie
         playlengthList.sort{$0 > $1}
         
         var number = 0
-        if playlengthList.count < 19{
-            number = playlengthList.count
+        if playlengthList.count < 20{
+            number = playlengthList.count - 1
         }else{
             number = 19
         }
         
         for i in 0...number{
-            if playlengthList[i] >= 0{
                 topTwentyDuration.append(playlengthList[i]) ///総再生時間を昇順に代入
                 print(playlengthList[i])
-            }
         }
         
         for topTwenty in topTwentyDuration{

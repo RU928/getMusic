@@ -61,15 +61,13 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         counts.sort{$0 > $1}///counts内の再生回数を昇順にする。ここで処理落ち
         var number = 0
-        if counts.count < 19{
-            number = counts.count
+        if counts.count < 20{
+            number = counts.count - 1
         }else{
             number = 19
         }
         for i in 0...number {
-            if counts[i] >= 0{///再生回数が19種類以下の場合があるため。
                 TopTwentyCount.append(counts[i])
-            }
         }
         
         songsQuery = MPMediaQuery.songs()
