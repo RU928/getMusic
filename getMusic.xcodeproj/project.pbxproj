@@ -10,6 +10,7 @@
 		2A08C4A31ECBD87D0008954F /* albumRankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A08C4A11ECBD87D0008954F /* albumRankTableViewCell.swift */; };
 		2A08C4A41ECBD87D0008954F /* albumRankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A08C4A21ECBD87D0008954F /* albumRankTableViewCell.xib */; };
 		2A113D071ECB0EA200CA3F6D /* albumRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A113D061ECB0EA200CA3F6D /* albumRankViewController.swift */; };
+		2A6DC1BF1ECFF48A00CDBE97 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DC1BE1ECFF48A00CDBE97 /* LaunchViewController.swift */; };
 		2A7A720F1EC5A084008DCDFC /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A720E1EC5A084008DCDFC /* RankingViewController.swift */; };
 		2A8996221EC990880008E8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8996211EC990880008E8EA /* Assets.xcassets */; };
 		2AC41D671EC6B9CD00D42DC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC41D661EC6B9CD00D42DC9 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		2A08C4A11ECBD87D0008954F /* albumRankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = albumRankTableViewCell.swift; sourceTree = "<group>"; };
 		2A08C4A21ECBD87D0008954F /* albumRankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = albumRankTableViewCell.xib; sourceTree = "<group>"; };
 		2A113D061ECB0EA200CA3F6D /* albumRankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = albumRankViewController.swift; sourceTree = "<group>"; };
+		2A6DC1BE1ECFF48A00CDBE97 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		2A7A720E1EC5A084008DCDFC /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		2A8996211EC990880008E8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AC41D661EC6B9CD00D42DC9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,12 +138,13 @@
 				2A08C4A11ECBD87D0008954F /* albumRankTableViewCell.swift */,
 				2A08C4A21ECBD87D0008954F /* albumRankTableViewCell.xib */,
 				2A113D061ECB0EA200CA3F6D /* albumRankViewController.swift */,
-				2AC41D681EC70C7A00D42DC9 /* rankTableViewCell.swift */,
 				2AC41D691EC70C7A00D42DC9 /* rankTableViewCell.xib */,
+				2AC41D681EC70C7A00D42DC9 /* rankTableViewCell.swift */,
 				2AC41D661EC6B9CD00D42DC9 /* ViewController.swift */,
 				2A7A720E1EC5A084008DCDFC /* RankingViewController.swift */,
 				2A8996211EC990880008E8EA /* Assets.xcassets */,
 				2AF193E31EC1990500A302EA /* LaunchScreen.storyboard */,
+				2A6DC1BE1ECFF48A00CDBE97 /* LaunchViewController.swift */,
 				2AF193E61EC1990500A302EA /* Info.plist */,
 			);
 			path = getMusic;
@@ -382,6 +385,7 @@
 				2A08C4A31ECBD87D0008954F /* albumRankTableViewCell.swift in Sources */,
 				2A113D071ECB0EA200CA3F6D /* albumRankViewController.swift in Sources */,
 				2AF193DB1EC1990500A302EA /* AppDelegate.swift in Sources */,
+				2A6DC1BF1ECFF48A00CDBE97 /* LaunchViewController.swift in Sources */,
 				2AF1EBDC1ECD4706003E803A /* artistRankViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

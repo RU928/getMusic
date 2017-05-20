@@ -28,6 +28,11 @@ class artistRankViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.delegate = self
         tableView.dataSource = self
         
+        if artistQuery.collections == nil{
+            return;
+        }
+
+        
         tableView.allowsSelection = false
         let nib = UINib(nibName: "artistRankTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "Cell")
@@ -68,7 +73,9 @@ class artistRankViewController: UIViewController, UITableViewDelegate, UITableVi
         allArtistDurationList.sort{ $0 > $1 }
         
         var number = 0
-        if allArtistDurationList.count < 20{
+        if allArtistDurationList.count == 0{
+            number = 0
+        }else if allArtistDurationList.count < 20{
             number = allArtistDurationList.count - 1
         }else{
             number = 19

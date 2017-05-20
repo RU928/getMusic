@@ -26,6 +26,11 @@ class albumRankViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.dataSource = self
         tableView.delegate = self
         
+        if albumQuery.collections == nil{
+            return;
+        }
+
+        
         tableView.allowsSelection = false
         let nib = UINib(nibName: "albumRankTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "Cell")
@@ -60,7 +65,9 @@ class albumRankViewController: UIViewController, UITableViewDelegate, UITableVie
         playlengthList.sort{$0 > $1}
         
         var number = 0
-        if playlengthList.count < 20{
+        if playlengthList.count == 0{
+            number = 0
+        }else if playlengthList.count < 20{
             number = playlengthList.count - 1
         }else{
             number = 19

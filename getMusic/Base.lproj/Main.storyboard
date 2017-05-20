@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GhT-cw-UzP">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,15 +18,55 @@
                         <viewControllerLayoutGuide type="bottom" id="h78-Pa-OPk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DKa-wF-mgD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="　　Your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tc-b2-ecZ">
+                                <rect key="frame" x="16" y="116" width="288" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="h8c-e1-qSx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="　　Favorite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyR-J9-iB9">
+                                <rect key="frame" x="16" y="178" width="288" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="3f5-c0-Cuo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="　　Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phk-JW-yd7">
+                                <rect key="frame" x="16" y="240" width="288" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="fYe-ie-NZm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dyR-J9-iB9" secondAttribute="trailing" id="4zY-h7-Xxl"/>
+                            <constraint firstItem="Phk-JW-yd7" firstAttribute="top" secondItem="dyR-J9-iB9" secondAttribute="bottom" constant="26" id="5Ny-dW-hZ0"/>
+                            <constraint firstItem="dyR-J9-iB9" firstAttribute="leading" secondItem="DKa-wF-mgD" secondAttribute="leadingMargin" id="5gi-8F-w8G"/>
+                            <constraint firstItem="4Tc-b2-ecZ" firstAttribute="top" secondItem="muC-1i-ERT" secondAttribute="bottom" constant="96" id="DC8-LO-BTa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Phk-JW-yd7" secondAttribute="trailing" id="FZf-3n-Ifm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Tc-b2-ecZ" secondAttribute="trailing" id="LIV-hY-lh8"/>
+                            <constraint firstItem="dyR-J9-iB9" firstAttribute="top" secondItem="4Tc-b2-ecZ" secondAttribute="bottom" constant="26" id="Rx3-md-4FT"/>
+                            <constraint firstItem="Phk-JW-yd7" firstAttribute="leading" secondItem="DKa-wF-mgD" secondAttribute="leadingMargin" id="TUM-xh-QNi"/>
+                            <constraint firstItem="4Tc-b2-ecZ" firstAttribute="leading" secondItem="DKa-wF-mgD" secondAttribute="leadingMargin" id="tjm-7A-bJY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tfz-oR-yoh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFz-5H-cib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909.60000000000002" y="183.95802098950526"/>
+            <point key="canvasLocation" x="489" y="-182"/>
         </scene>
         <!--Ranking View Controller-->
         <scene sceneID="tHX-QW-Eui">
@@ -38,15 +77,15 @@
                         <viewControllerLayoutGuide type="bottom" id="pGW-Fc-c5o"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ap1-0G-jqD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96.5" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vkb-jf-NOA">
-                                <rect key="frame" x="0.0" y="48.5" width="375" height="618.5"/>
+                                <rect key="frame" x="0.0" y="48.5" width="320" height="519.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 20 Songs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxg-fv-okA">
-                                <rect key="frame" x="16" y="28" width="343" height="20.5"/>
+                                <rect key="frame" x="16" y="28" width="288" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="1P9-C9-eeB"/>
                                 </constraints>
@@ -84,15 +123,15 @@
                         <viewControllerLayoutGuide type="bottom" id="tn8-Ft-3od"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qv7-VZ-GdH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kzs-on-Z8R">
-                                <rect key="frame" x="0.0" y="49" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="49" width="320" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 20 Albums" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbA-0m-6b5">
-                                <rect key="frame" x="16" y="28" width="343" height="21"/>
+                                <rect key="frame" x="16" y="28" width="288" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="r5k-ec-G9g"/>
                                 </constraints>
@@ -129,15 +168,15 @@
                         <viewControllerLayoutGuide type="bottom" id="pBh-2R-8P4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oMt-Wa-BPl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sdi-um-uue">
-                                <rect key="frame" x="0.0" y="49" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="49" width="320" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 20 Artists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WZ-Qh-b1D">
-                                <rect key="frame" x="16" y="28" width="343" height="21"/>
+                                <rect key="frame" x="16" y="28" width="288" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="qcw-ZI-g3J"/>
                                 </constraints>
@@ -163,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWv-0X-t2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3261.5999999999999" y="248.72563718140933"/>
+            <point key="canvasLocation" x="3158" y="578"/>
         </scene>
     </scenes>
 </document>

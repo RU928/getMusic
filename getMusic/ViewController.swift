@@ -8,13 +8,36 @@
 
 import UIKit
 import ESTabBarController
+import AVFoundation
+import MediaPlayer
+
 
 class ViewController: UIViewController {
+    
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        if #available(iOS 9.3, *) {
+            MPMediaLibrary.requestAuthorization { (status) in
+                if status == .authorized {
+                    // 許可されたので処理を継続して良い
+                    print("許可されました")
+                } else {
+                    // 許可されていないので、処理が継続できない
+                }
+            }
+        } else {
+            // Fallback on earlier versions
+        }
+        
+
+        
+                
+        
         setupTab()
 
     }

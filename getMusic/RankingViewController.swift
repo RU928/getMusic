@@ -27,12 +27,25 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
         ///ここからセル値の準備
-        for songs in songsQuery.collections!{
+        
+                
+        if songsQuery.collections == nil{
+            return;
+        }
+
+        
+        
+        
+        
+        
+                for songs in songsQuery.collections!{
             let playCount = songs.representativeItem?.playCount
             if playCount! > maxPlayCount{
                 maxPlayCount = playCount!
@@ -61,7 +74,9 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         counts.sort{$0 > $1}///counts内の再生回数を昇順にする。ここで処理落ち
         var number = 0
-        if counts.count < 20{
+        if counts.count == 0{
+            number = 0
+        }else if counts.count < 20{
             number = counts.count - 1
         }else{
             number = 19
