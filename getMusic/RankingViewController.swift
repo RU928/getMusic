@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 import MediaPlayer
+import SVProgressHUD
+
 
 class RankingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
@@ -28,24 +30,21 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.tableView.reloadData()
         
         // Do any additional setup after loading the view.
+        SVProgressHUD.show()
         tableView.delegate = self
         tableView.dataSource = self
+        
         ///ここからセル値の準備
         
-                
         if songsQuery.collections == nil{
             return;
         }
 
         
-        
-        
-        
-        
-                for songs in songsQuery.collections!{
+            for songs in songsQuery.collections!{
             let playCount = songs.representativeItem?.playCount
             if playCount! > maxPlayCount{
                 maxPlayCount = playCount!
@@ -103,6 +102,8 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.register(nib, forCellReuseIdentifier: "Cell")
         tableView.estimatedRowHeight = 120
         tableView.rowHeight = UITableViewAutomaticDimension
+        
+        SVProgressHUD.dismiss()
         
     }
     

@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 import MediaPlayer
+import SVProgressHUD
+
 
 
 class artistRankViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -24,6 +26,8 @@ class artistRankViewController: UIViewController, UITableViewDelegate, UITableVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SVProgressHUD.show()
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -102,10 +106,7 @@ class artistRankViewController: UIViewController, UITableViewDelegate, UITableVi
             }///for number
             
         }
-        
-        print("for文抜けました")
-        
-        
+        SVProgressHUD.dismiss()
     }
 
     override func didReceiveMemoryWarning() {
@@ -129,13 +130,9 @@ class artistRankViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.artistNameLabel.text = "\(artistRank[indexPath.row])"
         cell.rankLabel.text = "\(indexPath.row + 1)"
         
-        if artistImage[indexPath.row].representativeItem?.artwork != nil{
         let image = artistImage[indexPath.row].representativeItem?.artwork?.image(at: cell.artistImageView.bounds.size)
             cell.artistImageView.image = image
-        }else{
-            cell.artistImageView.backgroundColor = UIColor.gray
-        }
-        return cell
+                return cell
     }
     
 

@@ -16,6 +16,7 @@
 		2AC41D671EC6B9CD00D42DC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC41D661EC6B9CD00D42DC9 /* ViewController.swift */; };
 		2AC41D6A1EC70C7A00D42DC9 /* rankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC41D681EC70C7A00D42DC9 /* rankTableViewCell.swift */; };
 		2AC41D6B1EC70C7A00D42DC9 /* rankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC41D691EC70C7A00D42DC9 /* rankTableViewCell.xib */; };
+		2ACD7DFE1ED14A8400E96515 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD7DFD1ED14A8400E96515 /* CheckViewController.swift */; };
 		2AF193DB1EC1990500A302EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF193DA1EC1990500A302EA /* AppDelegate.swift */; };
 		2AF193E01EC1990500A302EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF193DE1EC1990500A302EA /* Main.storyboard */; };
 		2AF193E51EC1990500A302EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF193E31EC1990500A302EA /* LaunchScreen.storyboard */; };
@@ -56,6 +57,7 @@
 		2AC41D661EC6B9CD00D42DC9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2AC41D681EC70C7A00D42DC9 /* rankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rankTableViewCell.swift; sourceTree = "<group>"; };
 		2AC41D691EC70C7A00D42DC9 /* rankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = rankTableViewCell.xib; sourceTree = "<group>"; };
+		2ACD7DFD1ED14A8400E96515 /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		2AF193D71EC1990500A302EA /* getMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF193DA1EC1990500A302EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AF193DF1EC1990500A302EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		2AF193CE1EC1990500A302EA = {
 			isa = PBXGroup;
 			children = (
+				2ACD7DFD1ED14A8400E96515 /* CheckViewController.swift */,
 				2AF193D91EC1990500A302EA /* getMusic */,
 				2AF193EE1EC1990500A302EA /* getMusicTests */,
 				2AF193F91EC1990500A302EA /* getMusicUITests */,
@@ -381,6 +384,7 @@
 				2AC41D671EC6B9CD00D42DC9 /* ViewController.swift in Sources */,
 				2AC41D6A1EC70C7A00D42DC9 /* rankTableViewCell.swift in Sources */,
 				2A7A720F1EC5A084008DCDFC /* RankingViewController.swift in Sources */,
+				2ACD7DFE1ED14A8400E96515 /* CheckViewController.swift in Sources */,
 				2AF1EBDF1ECD57C9003E803A /* artistRankTableViewCell.swift in Sources */,
 				2A08C4A31ECBD87D0008954F /* albumRankTableViewCell.swift in Sources */,
 				2A113D071ECB0EA200CA3F6D /* albumRankViewController.swift in Sources */,

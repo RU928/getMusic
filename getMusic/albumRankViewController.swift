@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 import MediaPlayer
+import SVProgressHUD
+
 
 
 class albumRankViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -23,6 +25,8 @@ class albumRankViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        SVProgressHUD.show()
+        
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -101,7 +105,7 @@ class albumRankViewController: UIViewController, UITableViewDelegate, UITableVie
                 }
             }///ここまで
         }
-        
+        SVProgressHUD.dismiss()
        
     }
 

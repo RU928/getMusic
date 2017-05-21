@@ -21,24 +21,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        if #available(iOS 9.3, *) {
-            MPMediaLibrary.requestAuthorization { (status) in
-                if status == .authorized {
-                    // 許可されたので処理を継続して良い
-                    print("許可されました")
-                } else {
-                    // 許可されていないので、処理が継続できない
-                }
-            }
-        } else {
-            // Fallback on earlier versions
-        }
-        
+                self.setupTab()
 
-        
-                
-        
-        setupTab()
 
     }
 
