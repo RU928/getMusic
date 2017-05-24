@@ -8,6 +8,8 @@ target 'getMusic' do
   # Pods for getMusic
   pod 'ESTabBarController'
   pod 'SVProgressHUD'
+  pod 'Firebase/Core'
+  pod 'Firebase/AdMob'
 
 end
 

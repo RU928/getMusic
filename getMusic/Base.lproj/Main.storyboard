@@ -77,6 +77,13 @@
                                     <segue destination="GhT-cw-UzP" kind="show" id="APU-0C-xDc"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CeS-Wi-3Sp" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="yzY-Rv-3gv"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -85,15 +92,21 @@
                             <constraint firstItem="Phk-JW-yd7" firstAttribute="top" secondItem="dyR-J9-iB9" secondAttribute="bottom" constant="35" id="CaY-Cl-bn6"/>
                             <constraint firstItem="Xes-YK-YDI" firstAttribute="top" secondItem="Phk-JW-yd7" secondAttribute="bottom" constant="29" id="OGm-Su-1Q4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4Tc-b2-ecZ" secondAttribute="trailing" id="OJE-Sq-gVu"/>
+                            <constraint firstItem="CeS-Wi-3Sp" firstAttribute="leading" secondItem="2ko-rB-mOg" secondAttribute="leading" id="aUp-b2-ulS"/>
                             <constraint firstItem="4Tc-b2-ecZ" firstAttribute="top" secondItem="hQK-ZO-Mxr" secondAttribute="bottom" constant="79" id="abd-DF-4P2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dyR-J9-iB9" secondAttribute="trailing" id="bhv-Sp-qtR"/>
                             <constraint firstItem="dyR-J9-iB9" firstAttribute="leading" secondItem="2ko-rB-mOg" secondAttribute="leadingMargin" id="bxR-yD-hph"/>
                             <constraint firstItem="4Tc-b2-ecZ" firstAttribute="leading" secondItem="2ko-rB-mOg" secondAttribute="leadingMargin" id="dNH-TQ-Hh1"/>
+                            <constraint firstItem="PRi-Cv-2SS" firstAttribute="top" secondItem="CeS-Wi-3Sp" secondAttribute="bottom" id="hqj-rS-asd"/>
+                            <constraint firstAttribute="trailing" secondItem="CeS-Wi-3Sp" secondAttribute="trailing" id="j6O-VJ-LGQ"/>
                             <constraint firstItem="dyR-J9-iB9" firstAttribute="top" secondItem="4Tc-b2-ecZ" secondAttribute="bottom" constant="35" id="mnF-uJ-vw7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Phk-JW-yd7" secondAttribute="trailing" id="oqb-SQ-gGM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xes-YK-YDI" secondAttribute="trailing" id="wbb-u0-QIG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerView" destination="CeS-Wi-3Sp" id="ssq-xB-QDx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOq-fw-Nqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,11 +9,20 @@
 import UIKit
 import AVFoundation
 import MediaPlayer
+import GoogleMobileAds
+
 
 class CheckViewController: UIViewController {
 
+    @IBOutlet weak var bannerView: GADBannerView!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bannerView.adUnitID = "ca-app-pub-8348799394172462/1376476034"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         
         if #available(iOS 9.3, *) {
             MPMediaLibrary.requestAuthorization { (status) in

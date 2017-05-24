@@ -13,6 +13,7 @@
 		2A6DC1BF1ECFF48A00CDBE97 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DC1BE1ECFF48A00CDBE97 /* LaunchViewController.swift */; };
 		2A7A720F1EC5A084008DCDFC /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A720E1EC5A084008DCDFC /* RankingViewController.swift */; };
 		2A8996221EC990880008E8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8996211EC990880008E8EA /* Assets.xcassets */; };
+		2A8F25201ED5628000D10A14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A8F251F1ED5628000D10A14 /* GoogleService-Info.plist */; };
 		2AC41D671EC6B9CD00D42DC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC41D661EC6B9CD00D42DC9 /* ViewController.swift */; };
 		2AC41D6A1EC70C7A00D42DC9 /* rankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC41D681EC70C7A00D42DC9 /* rankTableViewCell.swift */; };
 		2AC41D6B1EC70C7A00D42DC9 /* rankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC41D691EC70C7A00D42DC9 /* rankTableViewCell.xib */; };
@@ -22,12 +23,11 @@
 		2AF193E51EC1990500A302EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF193E31EC1990500A302EA /* LaunchScreen.storyboard */; };
 		2AF193F01EC1990500A302EA /* getMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF193EF1EC1990500A302EA /* getMusicTests.swift */; };
 		2AF193FB1EC1990500A302EA /* getMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF193FA1EC1990500A302EA /* getMusicUITests.swift */; };
-		2AF1940A1EC1992200A302EA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF194091EC1992200A302EA /* AVFoundation.framework */; };
 		2AF1940C1EC1993800A302EA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF1940B1EC1993800A302EA /* MediaPlayer.framework */; };
 		2AF1EBDC1ECD4706003E803A /* artistRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1EBDB1ECD4706003E803A /* artistRankViewController.swift */; };
 		2AF1EBDF1ECD57C9003E803A /* artistRankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1EBDD1ECD57C9003E803A /* artistRankTableViewCell.swift */; };
 		2AF1EBE01ECD57C9003E803A /* artistRankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF1EBDE1ECD57C9003E803A /* artistRankTableViewCell.xib */; };
-		7EC2092902DBBED8BF396BA2 /* Pods_getMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E963967888435D317E9959 /* Pods_getMusic.framework */; };
+		E4F1B93E2865E65C95C6D8CB /* Pods_getMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E5D9AEE9A226877194505C /* Pods_getMusic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +54,22 @@
 		2A6DC1BE1ECFF48A00CDBE97 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		2A7A720E1EC5A084008DCDFC /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		2A8996211EC990880008E8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A8F25051ED532F200D10A14 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		2A8F25071ED532FD00D10A14 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2A8F25091ED5331500D10A14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A8F250B1ED5331F00D10A14 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2A8F250D1ED5332900D10A14 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2A8F250F1ED5333B00D10A14 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		2A8F25111ED5334600D10A14 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		2A8F25131ED5335400D10A14 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2A8F25151ED5335D00D10A14 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2A8F25171ED5336A00D10A14 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2A8F25191ED533B800D10A14 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../Downloads/GoogleMobileAdsSdkiOS-7.20.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		2A8F251F1ED5628000D10A14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2AC41D661EC6B9CD00D42DC9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2AC41D681EC70C7A00D42DC9 /* rankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rankTableViewCell.swift; sourceTree = "<group>"; };
 		2AC41D691EC70C7A00D42DC9 /* rankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = rankTableViewCell.xib; sourceTree = "<group>"; };
-		2ACD7DFD1ED14A8400E96515 /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		2ACD7DFD1ED14A8400E96515 /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckViewController.swift; path = ../CheckViewController.swift; sourceTree = "<group>"; };
 		2AF193D71EC1990500A302EA /* getMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF193DA1EC1990500A302EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AF193DF1EC1990500A302EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,8 +87,8 @@
 		2AF1EBDD1ECD57C9003E803A /* artistRankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = artistRankTableViewCell.swift; sourceTree = "<group>"; };
 		2AF1EBDE1ECD57C9003E803A /* artistRankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = artistRankTableViewCell.xib; sourceTree = "<group>"; };
 		B56C67DF54DC0F2E722303D9 /* Pods-getMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-getMusic/Pods-getMusic.release.xcconfig"; sourceTree = "<group>"; };
+		C0E5D9AEE9A226877194505C /* Pods_getMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_getMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC86547641CC797DBCF49A97 /* Pods-getMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-getMusic/Pods-getMusic.debug.xcconfig"; sourceTree = "<group>"; };
-		D3E963967888435D317E9959 /* Pods_getMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_getMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AF1940C1EC1993800A302EA /* MediaPlayer.framework in Frameworks */,
-				2AF1940A1EC1992200A302EA /* AVFoundation.framework in Frameworks */,
-				7EC2092902DBBED8BF396BA2 /* Pods_getMusic.framework in Frameworks */,
+				E4F1B93E2865E65C95C6D8CB /* Pods_getMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +121,6 @@
 		2AF193CE1EC1990500A302EA = {
 			isa = PBXGroup;
 			children = (
-				2ACD7DFD1ED14A8400E96515 /* CheckViewController.swift */,
 				2AF193D91EC1990500A302EA /* getMusic */,
 				2AF193EE1EC1990500A302EA /* getMusicTests */,
 				2AF193F91EC1990500A302EA /* getMusicUITests */,
@@ -133,6 +143,7 @@
 		2AF193D91EC1990500A302EA /* getMusic */ = {
 			isa = PBXGroup;
 			children = (
+				2ACD7DFD1ED14A8400E96515 /* CheckViewController.swift */,
 				2AF193DA1EC1990500A302EA /* AppDelegate.swift */,
 				2AF193DE1EC1990500A302EA /* Main.storyboard */,
 				2AF1EBDD1ECD57C9003E803A /* artistRankTableViewCell.swift */,
@@ -149,6 +160,7 @@
 				2AF193E31EC1990500A302EA /* LaunchScreen.storyboard */,
 				2A6DC1BE1ECFF48A00CDBE97 /* LaunchViewController.swift */,
 				2AF193E61EC1990500A302EA /* Info.plist */,
+				2A8F251F1ED5628000D10A14 /* GoogleService-Info.plist */,
 			);
 			path = getMusic;
 			sourceTree = "<group>";
@@ -174,9 +186,20 @@
 		2AF194081EC1992200A302EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A8F25191ED533B800D10A14 /* GoogleMobileAds.framework */,
+				2A8F25171ED5336A00D10A14 /* SystemConfiguration.framework */,
+				2A8F25151ED5335D00D10A14 /* StoreKit.framework */,
+				2A8F25131ED5335400D10A14 /* MessageUI.framework */,
+				2A8F25111ED5334600D10A14 /* EventKitUI.framework */,
+				2A8F250F1ED5333B00D10A14 /* EventKit.framework */,
+				2A8F250D1ED5332900D10A14 /* CoreTelephony.framework */,
+				2A8F250B1ED5331F00D10A14 /* CoreMedia.framework */,
+				2A8F25091ED5331500D10A14 /* CoreGraphics.framework */,
+				2A8F25071ED532FD00D10A14 /* AudioToolbox.framework */,
+				2A8F25051ED532F200D10A14 /* AdSupport.framework */,
 				2AF1940B1EC1993800A302EA /* MediaPlayer.framework */,
 				2AF194091EC1992200A302EA /* AVFoundation.framework */,
-				D3E963967888435D317E9959 /* Pods_getMusic.framework */,
+				C0E5D9AEE9A226877194505C /* Pods_getMusic.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -306,6 +329,7 @@
 				2AF1EBE01ECD57C9003E803A /* artistRankTableViewCell.xib in Resources */,
 				2AF193E51EC1990500A302EA /* LaunchScreen.storyboard in Resources */,
 				2AC41D6B1EC70C7A00D42DC9 /* rankTableViewCell.xib in Resources */,
+				2A8F25201ED5628000D10A14 /* GoogleService-Info.plist in Resources */,
 				2AF193E01EC1990500A302EA /* Main.storyboard in Resources */,
 				2A8996221EC990880008E8EA /* Assets.xcassets in Resources */,
 				2A08C4A41ECBD87D0008954F /* albumRankTableViewCell.xib in Resources */,
@@ -563,6 +587,7 @@
 				INFOPLIST_FILE = getMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademu.ryou.tamura.getMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

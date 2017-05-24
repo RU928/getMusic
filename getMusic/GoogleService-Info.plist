@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>946646934037-pi5bfdedet20b65vifglnis2gcv0s2mi.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.946646934037-pi5bfdedet20b65vifglnis2gcv0s2mi</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB1MtPDmA7U970BA9LVC4_9C9Hg9xYvRYM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>946646934037</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.techacademu.ryou.tamura.getMusic</string>
+	<key>PROJECT_ID</key>
+	<string>urfavoritemusic-7f1a6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>urfavoritemusic-7f1a6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:946646934037:ios:e17d6f5befec801b</string>
+	<key>DATABASE_URL</key>
+	<string>https://urfavoritemusic-7f1a6.firebaseio.com</string>
+</dict>
+</plist>
